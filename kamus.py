@@ -11,4 +11,10 @@ for i in range(5):
     if word in meme_dict.keys():
         print(meme_dict[word])
     else:
-        print("kata tidak ditemukan")
+        yubulehmeh = input('kata tidak ditemukan, apakah anda ingin menambahkannya?')
+        if yubulehmeh == 'yes':
+            arti = input('apa artinya?')
+            meme_dict[word] = arti
+            print(meme_dict)
+        else:
+            print('ok')
